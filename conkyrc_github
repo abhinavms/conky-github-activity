@@ -1,0 +1,62 @@
+conky.config = {
+	own_window = true,
+	own_window_transparent = true,
+	own_window_class = 'conky',
+	own_window_argb_visual = true,
+    own_window_argb_value = E6000000,
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	background = false,
+
+	use_xft = true,
+	font = 'AvantGarde LT Medium:medium:size=40',
+
+	xftalpha = 0.8,
+	text_buffer_size = 2048,
+	update_interval = 2,
+	total_run_times = 0,
+
+	max_user_text = 18384,
+	double_buffer = true,
+	minimum_width = 450, minimum_height = 400,
+	maximum_width = 800,
+
+-- Misc Console #
+    out_to_console = false,
+    out_to_stderr = false,
+    extra_newline = false,
+
+	draw_graph_borders = false,
+	draw_shades = false,
+	draw_outline = false,
+	draw_borders = false,
+	stippled_borders = 2,
+
+	default_color = 'white',
+    -- own_window_colour = 'white',
+
+	alignment = 'top_right',
+
+	gap_x = 0,
+	gap_y = 0,
+
+	no_buffers = true,
+
+	uppercase = false,
+
+	cpu_avg_samples = 2,
+
+	net_avg_samples = 2,
+	override_utf8_locale = true,
+
+	use_spacer = 'none',
+	short_units = true,
+
+	lua_load = '~/.conky/conky_github.lua',
+	lua_draw_hook_pre = 'main',
+
+};
+
+conky.text = [[
+	${offset 130}${voffset 120}${color ffffff}${font AvantGarde LT Medium:size=50:style=Bold}DAYS${offset 13}${color ffffff}${font AvantGarde LT Medium:size=23:style=Medium}Since
+	${offset 145}${voffset -15}${color ffffff}${font AvantGarde LT Medium:size=15:style=Light}L A S T  C O N T R I B U T I O N
+]];
