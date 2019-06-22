@@ -16,7 +16,7 @@ def user(user):
         if(day):
             return day
         else:
-            return 0
+            return -1
 
 # Create log of contritubtions
 def year(string):
@@ -38,6 +38,10 @@ def year(string):
 username = "abhinavms" # <----- Change your username here 
 
 # Calculating the days between the last contribution and present day
-LastActivity = datetime.strptime(user(username), "%Y-%m-%d")
-TimeInactive = datetime.now() - LastActivity
-print("{:02}".format(TimeInactive.days))
+lastDay = user(username);
+if (lastDay==-1):
+    print("-1")
+else:
+    LastActivity = datetime.strptime(lastDay, "%Y-%m-%d")
+    TimeInactive = datetime.now() - LastActivity
+    print("{:02}".format(TimeInactive.days))
