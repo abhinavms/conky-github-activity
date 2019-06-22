@@ -51,12 +51,11 @@ conky.config = {
 	use_spacer = 'none',
 	short_units = true,
 
-	lua_load = '~/.conky/conky_github.lua',
-	lua_draw_hook_pre = 'main',
-
 };
 
 conky.text = [[
-	${offset 130}${voffset 120}${color ffffff}${font AvantGarde LT Medium:size=50:style=Bold}DAYS${offset 13}${color ffffff}${font AvantGarde LT Medium:size=23:style=Medium}Since
-	${offset 145}${voffset -15}${color ffffff}${font AvantGarde LT Medium:size=15:style=Light}L A S T  C O N T R I B U T I O N
+	${offset 110}${voffset 100}${font AvantGarde LT Medium:size=65:style=Bold}${execi 7200 python script.py}\
+	${offset -34}${voffset -25}${color ffffff}${font AvantGarde LT Medium:size=40:style=Bold}DAYS${offset 13}${color ffffff}${font AvantGarde LT Medium:size=23:style=Medium}Since
+	${offset 230}${voffset -15}${color ffffff}${font AvantGarde LT Medium:size=15:style=Light}L A S T  C O N T R I B U T I O N
+
 ]];
