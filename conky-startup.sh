@@ -2,6 +2,6 @@
 
 killall conky
 
-conky -c ~/.conky/conkyrc_github ;
+conky -c ~/.conky/github_activity/conkyrc_github ;
 
 exit 0
