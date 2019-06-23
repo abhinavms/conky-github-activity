@@ -2,7 +2,7 @@
 
  
 ![alt text](Screenshot/Screenshot_20190623.png "")
-Conky theme that shows the number of days since the last contribution in GitHub. A contribution can anything from issues, pull requests & commits
+Conky theme that shows the number of days since the last contribution in GitHub. A contribution can be anything from issues, pull requests & commits
 
 
 ## Install guide
