@@ -29,3 +29,5 @@ Run conky with custom config
     
 > **Note:**  
 >Alternative: Copy content of conkyrc_github into **~/.conkyrc** file and copy script.py also to another location and update the execi path of the .py file within the conkyrc and run conky without any parameter.
+>
+>AutoStartup: If you have issue running conky on startup with conky -c ~/.conky/github_activity/conkyrc_github, then set conky-startup.sh to execute on startup
